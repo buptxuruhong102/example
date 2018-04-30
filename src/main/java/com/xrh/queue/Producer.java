@@ -7,8 +7,8 @@ package com.xrh.queue;
 public class Producer implements Runnable{
 
     public void run() {
-        for(int i = 0; i < 100000000; i++){
-            Message message = new Message(i+ "");
+        for(;;){
+            Message message = new Message("123");
             try {
                 MessageQueue.getInstance().put(message);
             } catch (InterruptedException e) {
