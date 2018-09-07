@@ -8,7 +8,7 @@ import com.xrh.utils.TimeService;
 public class Start {
     public static void main(String[] args) {
         for(int i = 0; i < 10; i++){
-            System.out.println(TimeService.currentTimeMillis());
+            System.out.println("123" + TimeService.currentTimeMillis());
         }
     }
 }
